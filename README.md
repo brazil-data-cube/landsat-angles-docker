@@ -13,7 +13,7 @@ Landsat Angles Creation Tools
 2. Run
 
    ```bash
-   $ docker build -t landsat-angles .
+   $ docker build -t brazildatacube/landsat-angles .
    ```
 
    from the root of this repository.
@@ -24,7 +24,7 @@ To process a Landsat-8 scene (e.g. `LC08_L2SP_222081_20190502_20200829_02_T1`) r
 
 ```bash
 $ docker run --rm \
-    -v /path/to/input/:/mnt/input-dir:rw landsat-angles LC08_L2SP_222081_20190502_20200829_02_T1
+    -v /path/to/input/:/mnt/input-dir:rw brazildatacube/landsat-angles LC08_L2SP_222081_20190502_20200829_02_T1
 ```
 
 Results are written on input-dir
